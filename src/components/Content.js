@@ -1,48 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
 
-import { fetchProducts } from '../redux/actions/ProductActions/actions';
-import './Content.scss';
-import ProductComponent from './Product';
+import { fetchProducts } from "../redux/actions/ProductActions/actions";
+import "./Content.scss";
+import ProductComponent from "./Product";
 
 function ContentComponent(props) {
-  const {fetchProducts, products } = props
+  const { fetchProducts, products } = props;
 
   useEffect(() => {
-    fetchProducts()
-  },[]);
-
+    fetchProducts();
+  }, []);
 
   return (
     <React.Fragment>
       <div className={"ContentContainer"}>
-      {products && products.map(product => (
-        (
-          <ProductComponent product={product} key={product.id}/>
-        )
-      ))}
-    </div>
-    <div className="button-container">
-    <div className="button"><p id="load-text">LOAD MORE</p></div>
-    </div>
-    
+        {products &&
+          products.map(product => (
+            <ProductComponent product={product} key={product.id} />
+          ))}
+      </div>
+      <div className="button-container">
+        <div className="button">
+          <p id="load-text">LOAD MORE</p>
+        </div>
+      </div>
     </React.Fragment>
   );
 }
 
 ContentComponent.propTypes = {
-    fetchProducts: PropTypes.any,
-}
+  fetchProducts: PropTypes.any
+};
 
 const mapStateToProps = ({ products: { data, isFetching } }) => ({
   products: data,
-  loading: isFetching,
+  loading: isFetching
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-  fetchProducts,
-}, dispatch);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      fetchProducts
+    },
+    dispatch
+  );
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContentComponent);

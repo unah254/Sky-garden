@@ -68,19 +68,19 @@ function FooterComponent() {
             Secure payment online or on delivery
           </p>
           <p>
-            <FontAwesomeIcon icon={faUndo}className="social" /> Free returns
+            <FontAwesomeIcon icon={faUndo} className="social" /> Free returns
           </p>
         </div>
         <div className="follow">
           <h3>FOLLOW OUR NEWS</h3>
           <p>
-            <FontAwesomeIcon icon={faFacebookF} className="social" />  Facebook
+            <FontAwesomeIcon icon={faFacebookF} className="social" /> Facebook
           </p>
           <p>
             <FontAwesomeIcon icon={faInstagram} className="social" /> Instagram
           </p>
           <p>
-            <FontAwesomeIcon icon={faLinkedinIn} className="social"/> LinkedIn
+            <FontAwesomeIcon icon={faLinkedinIn} className="social" /> LinkedIn
           </p>
         </div>
       </div>

@@ -7,30 +7,29 @@
   background-color: white;
   font-family: Raleway;
 
-
   .productImage {
     flex-grow: 1;
   }
-  
+
   .product-image {
-      object-fit: cover;
-      width: 227px;
-      height: 227px;
-      margin-top: 15px;
+    object-fit: cover;
+    width: 227px;
+    height: 227px;
+    margin-top: 15px;
   }
-  
+
   .productInfo {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
-  
+
     #title {
-      font-weight:700;
+      font-weight: 700;
       align-self: flex-start;
     }
 
     #partner {
-      font-weight:400;
+      font-weight: 400;
       font-size: 14px;
       color: #777777;
       align-self: flex-start;
@@ -39,24 +38,24 @@
     #price {
       font-weight: bolder;
       font-size: 18px;
-      color:#55D187;
+      color: #55d187;
       align-self: flex-start;
       height: 24px;
 
-      span{
+      span {
         color: grey;
-        margin-left: 10px
+        margin-left: 10px;
       }
     }
   }
-  
+
   .productPercentage {
     display: flex;
-    align-items: flex-star
+    align-items: flex-star;
   }
-  
-  .percentage{
-    background-color: #55D187;
+
+  .percentage {
+    background-color: #55d187;
     color: white;
     width: 73px;
     height: 28px;
@@ -64,10 +63,8 @@
     display: flex;
     justify-content: center;
 
-    .value{
+    .value {
       margin-top: 5px;
     }
   }
-
-  
 }

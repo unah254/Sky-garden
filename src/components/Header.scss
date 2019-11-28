@@ -1,7 +1,7 @@
 .nav-bar {
-    height: 102px;
-    width: 1446px;
-    background-color: #1E1E1E;
+  height: 102px;
+  width: 1446px;
+  background-color: #1e1e1e;
 }
 
 .main {
@@ -11,81 +11,80 @@
   justify-content: space-between;
 
   &__content {
-      width: 50%;
-      height: inherit;
-      text-align: left;
-      margin: 52px 150px 50px 80px;;
+    width: 50%;
+    height: inherit;
+    text-align: left;
+    margin: 52px 150px 50px 80px;
   }
 
   &__title {
-      margin-bottom: 23px;
-      font-family: 'Raleway';
-      font-weight: bolder;
-      color:#1F1F1F;
-      font-size: 58px;
+    margin-bottom: 23px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    color: #1f1f1f;
+    font-size: 58px;
   }
 
   &__text {
-      width: 400px;
-      font-family: 'Raleway';
-      font-size: 14px;
+    width: 400px;
+    font-family: "Raleway";
+    font-size: 14px;
   }
 
   &__time {
-      font-family: 'Raleway';
-      font-weight: bolder;
-      font-size: 24px;
-      margin-top: 9px ;
+    font-family: "Raleway";
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 9px;
   }
 
   .images {
-          align-items: flex-start;
-          position: relative;
-          width: 50%;
+    align-items: flex-start;
+    position: relative;
+    width: 50%;
 
-          &__img-1 {
-              position: absolute;
-              left: -38px;
-          }
+    &__img-1 {
+      position: absolute;
+      left: -38px;
+    }
 
-          &__img-2 {
-              position: absolute;
-              z-index: 5;
-              top: 138px;
-              right: 176px;
-              font-family: Raleway;
+    &__img-2 {
+      position: absolute;
+      z-index: 5;
+      top: 138px;
+      right: 176px;
+      font-family: Raleway;
 
-              .delivery {
-                  position: absolute;
-                  color: white;
-                  top: 49px;
-                  left: 22px;
-                  font-weight: bold;
-                  font-size: 16px;
-              }
-          }
-
-          &__img-3 {
-              position: absolute;
-              right: 54px;
-
-              .percent {
-                  display:flex;
-                  flex-direction: column;
-                  position: absolute;
-                  z-index: 7;
-                  top: 80px;
-                  font-size: 41px;
-                  font-family: Raleway;
-                  font-weight: 900;
-                  color: white;
-                  right: 67px;
-              }
-              .line {
-                padding-bottom:30px;
-                width:63.21px;
-              }
-          }
+      .delivery {
+        position: absolute;
+        color: white;
+        top: 49px;
+        left: 22px;
+        font-weight: bold;
+        font-size: 16px;
       }
+    }
 
+    &__img-3 {
+      position: absolute;
+      right: 54px;
+
+      .percent {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 7;
+        top: 80px;
+        font-size: 41px;
+        font-family: Raleway;
+        font-weight: 900;
+        color: white;
+        right: 67px;
+      }
+      .line {
+        padding-bottom: 30px;
+        width: 63.21px;
+      }
+    }
+  }
 }
