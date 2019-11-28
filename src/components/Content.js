@@ -4,8 +4,8 @@ import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
 import { fetchProducts } from '../redux/actions/ProductActions/actions';
-import './ContentComponentModule.scss';
-import ProductComponent from './ProductComponent';
+import './Content.scss';
+import ProductComponent from './Product';
 
 function ContentComponent(props) {
   const {fetchProducts, products } = props
@@ -16,13 +16,19 @@ function ContentComponent(props) {
 
 
   return (
-    <div className={"ContentContainer"}>
+    <React.Fragment>
+      <div className={"ContentContainer"}>
       {products && products.map(product => (
         (
           <ProductComponent product={product} key={product.id}/>
         )
       ))}
     </div>
+    <div className="button-container">
+    <div className="button"><p id="load-text">LOAD MORE</p></div>
+    </div>
+    
+    </React.Fragment>
   );
 }
 

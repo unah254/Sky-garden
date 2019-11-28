@@ -1,8 +1,8 @@
 import React from 'react';
 import './HomePageModule.scss';
-import HeaderComponent from '../components/HeaderComponent';
-import ContentComponent from '../components/ContentComponent';
-import FooterComponent from '../components/FooterComponent';
+import HeaderComponent from '../components/Header';
+import ContentComponent from '../components/Content';
+import FooterComponent from '../components/Footer';
 import CustomerCare from  '../components/CustomerCare';
 
 function HomePage(props) {

@@ -1,6 +1,13 @@
 import React from "react";
+import {
+  faFacebookF,
+  faLinkedinIn,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUndo } from "@fortawesome/free-solid-svg-icons";
 
-import "./FooterComponentModule.scss";
+import "./Footer.scss";
 
 function FooterComponent() {
   return (
@@ -42,32 +49,39 @@ function FooterComponent() {
         </div>
         <div className="shopping">
           <h3>SHOPPING WITH US IS EASY</h3>
-          <p>Same day delivery</p>
-          <p>Secure payment online or on delivery</p>
-          <p>Free returns</p>
-          <img
-            className="car"
-            src="https://res.cloudinary.com/ddpvmfuot/image/upload/v1574840441/car_copy.png"
-            alt=""
-          />
-          <img
-            className="lock"
-            src="https://res.cloudinary.com/ddpvmfuot/image/upload/v1574840571/lock_2_copy.png"
-            alt=""
-          />
-          <img
-            className="arrow"
-            src="https://res.cloudinary.com/ddpvmfuot/image/upload/v1574922336/icons8-reply-arrow-16.png"
-            alt=""
-          />
+          <p>
+            {" "}
+            <img
+              className="car"
+              src="https://res.cloudinary.com/ddpvmfuot/image/upload/v1574840441/car_copy.png"
+              alt=""
+            />{" "}
+            Same day delivery
+          </p>
+          <p>
+            {" "}
+            <img
+              className="lock"
+              src="https://res.cloudinary.com/ddpvmfuot/image/upload/v1574840571/lock_2_copy.png"
+              alt=""
+            />{" "}
+            Secure payment online or on delivery
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faUndo}className="social" /> Free returns
+          </p>
         </div>
         <div className="follow">
           <h3>FOLLOW OUR NEWS</h3>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
+          <p>
+            <FontAwesomeIcon icon={faFacebookF} className="social" />  Facebook
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faInstagram} className="social" /> Instagram
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faLinkedinIn} className="social"/> LinkedIn
+          </p>
         </div>
       </div>
       <div className="icons">
@@ -94,6 +108,9 @@ function FooterComponent() {
       </div>
       <div className="copyright">
         <p> © Sky,Garden.2019</p>
+      </div>
+      <div className="policy">
+        <p> Privacy Policy|Terms and Conditions</p>
       </div>
     </div>
   );

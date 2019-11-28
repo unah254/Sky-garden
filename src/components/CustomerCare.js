@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import "./CustomerCare.scss";
 
@@ -22,7 +24,7 @@ function CustomerCareComponent() {
           </p>
 
           <div className="button">
-            <p>Start Live Chat</p>
+            <p>Start Live Chat  <FontAwesomeIcon icon={faChevronRight} /></p>
           </div>
         </div>
 
@@ -36,11 +38,11 @@ function CustomerCareComponent() {
           <div className="text">
             <h3>Ready</h3>
             <h3>to Sell?</h3>
-            <p>Open your free shop and<br/>
+            <p id="shop">Open your free shop and<br/>
               start selling in 5 min!
             </p>
             <div className="button">
-              <p>Open Your Shop</p>
+              <p>Open Your Shop  <FontAwesomeIcon icon={faChevronRight} /></p>
             </div>
 
           </div>

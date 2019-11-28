@@ -9,7 +9,7 @@
     color: white;
     font-size: 49px;
     left: 509px;
-    margin-top: 32px;
+    margin-top: 55px;
   }
 
   #logo {
@@ -26,13 +26,15 @@
     font-weight: 800;
     text-align: left;
     margin-left: 8px;
+    position: absolute;
+    margin-top: -60px;
   }
 
   .playstore {
     position: absolute;
     height: 51px;	
     width: 173px;
-    margin-top: 300px;
+    margin-top: 270px;
     left: 520px;
   }
 
@@ -57,18 +59,18 @@
       margin-top: 417px;
 
        .car {
-         position: absolute;
          height: 12.85px;	
          width: 25.47px;
          left: -40px;
          margin-top: -100px;
+         margin-right: 7px;
        }
        .lock {
-         position: absolute;
          height: 21px;
          width: 16px;
          margin-top: -70px;
          left: -30px;
+         margin-right: 7px;
 
        }
        .arrow {
@@ -88,6 +90,10 @@
       left: 1041px;
     }
   }
+  .social {
+    margin-right:7px;
+  }
+
   .icons {
     position: absolute;
     margin-top: 650px;
@@ -122,5 +128,15 @@
     font-family: Raleway;
     font-weight: 600;
     font-size: 12px;
+  }
+  .policy {
+    color: #56CC86;
+    font-size: 12px;
+    font-family: Raleway;
+    font-weight: 600;
+    position: absolute;
+    left: 1040px;
+    margin-top: 650px;
+
   }
 }

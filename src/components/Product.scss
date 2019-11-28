@@ -42,6 +42,11 @@
       color:#55D187;
       align-self: flex-start;
       height: 24px;
+
+      span{
+        color: grey;
+        margin-left: 10px
+      }
     }
   }
   
@@ -56,6 +61,12 @@
     width: 73px;
     height: 28px;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+
+    .value{
+      margin-top: 5px;
+    }
   }
 
   
