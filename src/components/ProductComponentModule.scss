@@ -1,0 +1,62 @@
+.productContainer {
+  display: flex;
+  height: 462px;
+  width: 250px;
+  margin: 18px;
+  flex-direction: column;
+  background-color: white;
+  font-family: Raleway;
+
+
+  .productImage {
+    flex-grow: 1;
+  }
+  
+  .product-image {
+      object-fit: cover;
+      width: 227px;
+      height: 227px;
+      margin-top: 15px;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+  
+    #title {
+      font-weight:700;
+      align-self: flex-start;
+    }
+
+    #partner {
+      font-weight:400;
+      font-size: 14px;
+      color: #777777;
+      align-self: flex-start;
+    }
+
+    #price {
+      font-weight: bolder;
+      font-size: 18px;
+      color:#55D187;
+      align-self: flex-start;
+      height: 24px;
+    }
+  }
+  
+  .productPercentage {
+    display: flex;
+    align-items: flex-star
+  }
+  
+  .percentage{
+    background-color: #55D187;
+    color: white;
+    width: 73px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  
+}
