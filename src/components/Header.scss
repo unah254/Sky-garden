@@ -1,6 +1,5 @@
 .nav-bar {
   height: 102px;
-  width: 1446px;
   background-color: #1e1e1e;
 }
 
@@ -87,4 +86,21 @@
       }
     }
   }
+
+  @media only screen and (max-width: 500px) {
+
+    .images__img-1  {
+      display: none; 
+    }
+  
+    .main__content {
+      width: 44%;
+    }
+  
+    .main__title {
+      font-size: 3em;
+    }
+  }
 }
+
+
